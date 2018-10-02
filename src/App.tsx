@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import { Toolbar } from './Components';
+import { SideDrawer, Toolbar } from './Components';
 
 interface IState {
   sideDrawerOpen: boolean
@@ -33,6 +33,7 @@ class App extends React.Component<any, IState> {
     return (
       <div style={{height: '100%'}}>
         <Toolbar drawerClickHandler={this.onDrawerClick} />
+        <SideDrawer show={this.state.sideDrawerOpen} />        
       </div>
     );
   }
