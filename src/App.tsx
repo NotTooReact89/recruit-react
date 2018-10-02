@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import { SideDrawer, Toolbar } from './Components';
+import { Backdrop, SideDrawer, Toolbar } from './Components';
 
 interface IState {
   sideDrawerOpen: boolean
@@ -33,7 +33,8 @@ class App extends React.Component<any, IState> {
     return (
       <div style={{height: '100%'}}>
         <Toolbar drawerClickHandler={this.onDrawerClick} />
-        <SideDrawer show={this.state.sideDrawerOpen} />        
+        <SideDrawer show={this.state.sideDrawerOpen} />
+        {this.state.sideDrawerOpen ? <Backdrop click={this.onBackdropClick} /> : null}
       </div>
     );
   }

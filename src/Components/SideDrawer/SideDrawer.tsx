@@ -35,7 +35,9 @@ class SideDrawer extends React.Component<ISideDrawerProps, ISideDrawerState> {
   public render() {
     return (
       <nav className={this.state.drawerClass}>
-        <a href="/"><img src={Images.icons.back} alt='back' width="64" height="64" /></a>
+        <a href="/" className="back-button">
+          <img src={Images.icons.back} alt='back' width="50" height="50" />
+        </a>
         <ul>
           <li>
             <a href="/">Menu Item 1</a>

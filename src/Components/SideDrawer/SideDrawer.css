@@ -15,6 +15,10 @@
   .side-drawer.open {
     transform: translateX(0);
   }
+
+  .back-button {
+    margin-left: 0.5rem
+  }
   
   .side-drawer ul {
     height: 100%;
