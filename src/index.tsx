@@ -5,10 +5,7 @@ import App from './App';
 import './index.css';
 import registerServiceWorker from './registerServiceWorker';
 
-// Add these lines:
-if (process.env.NODE_ENV !== 'production') {
-  localStorage.setItem('debug', 'drawer-container:*');
-}
+localStorage.setItem('debug', 'recruit-react:*');
 
 ReactDOM.render(
   <App />,
