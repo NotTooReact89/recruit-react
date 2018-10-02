@@ -1,0 +1,15 @@
+.ccForm {
+	width: 500px;
+	margin: auto;
+	padding: 1.5rem;
+}
+
+.btn-custom {
+	background-color: #fcbd1b;
+	color: #000000
+}
+
+.input-custom {
+	background-color: #D6D6D6;
+	color: #555;
+}

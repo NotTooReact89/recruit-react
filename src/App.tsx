@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import { Backdrop, SideDrawer, Toolbar } from './Components';
+import { Backdrop, CreditCardForm, SideDrawer, Toolbar } from './Components';
 
 interface IState {
   sideDrawerOpen: boolean
@@ -35,6 +35,9 @@ class App extends React.Component<any, IState> {
         <Toolbar drawerClickHandler={this.onDrawerClick} />
         <SideDrawer show={this.state.sideDrawerOpen} />
         {this.state.sideDrawerOpen ? <Backdrop click={this.onBackdropClick} /> : null}
+        <main style={{marginTop: '64px'}}>
+          <CreditCardForm />
+        </main>
       </div>
     );
   }
