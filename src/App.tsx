@@ -1,19 +1,38 @@
 import * as React from 'react';
-import './App.css';
 
-import logo from './logo.svg';
+import { Toolbar } from './Components';
 
-class App extends React.Component {
+interface IState {
+  sideDrawerOpen: boolean
+}
+
+class App extends React.Component<any, IState> {
+
+  constructor(props: any) {
+    super(props)
+    this.state= {
+      sideDrawerOpen: false
+    }
+  }
+
+  public onDrawerClick = () => {
+    this.setState((prevState) => {
+      return {
+        sideDrawerOpen: !prevState.sideDrawerOpen
+      };
+    });
+  };
+
+  public onBackdropClick = () => {
+    this.setState({
+      sideDrawerOpen: false
+    });
+  };
+
   public render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.tsx</code> and save to reload.
-        </p>
+      <div style={{height: '100%'}}>
+        <Toolbar drawerClickHandler={this.onDrawerClick} />
       </div>
     );
   }
