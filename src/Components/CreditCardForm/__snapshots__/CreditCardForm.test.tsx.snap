@@ -1,0 +1,83 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render credit card form component correctly 1`] = `
+<form
+  className="ccForm"
+  onSubmit={[Function]}
+>
+  <h2>
+    Enter your credit card details
+  </h2>
+  <div
+    className="panel panel-default"
+  >
+    <div
+      className="formErrors"
+    >
+      
+      
+      
+    </div>
+  </div>
+  <div
+    className="form-group "
+  >
+    <label
+      htmlFor="ccNumber"
+    >
+      Credit card number
+    </label>
+    <input
+      className="form-control input-custom"
+      name="ccNumber"
+      onChange={[Function]}
+      placeholder="Your 10 digit credit card number"
+      required={true}
+      type="text"
+      value=""
+    />
+  </div>
+  <div
+    className="form-group "
+  >
+    <label
+      htmlFor="cvvNumber"
+    >
+      CVV number
+    </label>
+    <input
+      className="form-control input-custom"
+      name="cvvNumber"
+      onChange={[Function]}
+      placeholder="Three digit at the back of your card"
+      required={true}
+      type="password"
+      value=""
+    />
+  </div>
+  <div
+    className="form-group "
+  >
+    <label
+      htmlFor="expiryDate"
+    >
+      Expiry date
+    </label>
+    <input
+      className="form-control input-custom"
+      name="expiryDate"
+      onChange={[Function]}
+      placeholder="Your credit card expiry date"
+      required={true}
+      type="date"
+      value=""
+    />
+  </div>
+  <button
+    className="btn btn-custom"
+    type="submit"
+  >
+    Submit
+  </button>
+</form>
+`;

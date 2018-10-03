@@ -31,11 +31,11 @@ class App extends React.Component<any, IState> {
 
   public render() {
     return (
-      <div style={{height: '100%'}}>
+      <div className='root'>
         <Toolbar drawerClickHandler={this.onDrawerClick} />
         <SideDrawer show={this.state.sideDrawerOpen} />
         {this.state.sideDrawerOpen ? <Backdrop click={this.onBackdropClick} /> : null}
-        <main style={{marginTop: '64px'}}>
+        <main className='container'>
           <CreditCardForm />
         </main>
       </div>

@@ -1,0 +1,69 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should hide side drawer correctly 1`] = `
+<nav
+  className="side-drawer"
+>
+  <a
+    className="back-button"
+    href="/"
+  >
+    <img
+      alt="back"
+      height="50"
+      src="back-icon.png"
+      width="50"
+    />
+  </a>
+  <ul>
+    <li>
+      <a
+        href="/"
+      >
+        Menu Item 1
+      </a>
+    </li>
+    <li>
+      <a
+        href="/"
+      >
+        Menu Item 2
+      </a>
+    </li>
+  </ul>
+</nav>
+`;
+
+exports[`should show side drawer correctly 1`] = `
+<nav
+  className="side-drawer open"
+>
+  <a
+    className="back-button"
+    href="/"
+  >
+    <img
+      alt="back"
+      height="50"
+      src="back-icon.png"
+      width="50"
+    />
+  </a>
+  <ul>
+    <li>
+      <a
+        href="/"
+      >
+        Menu Item 1
+      </a>
+    </li>
+    <li>
+      <a
+        href="/"
+      >
+        Menu Item 2
+      </a>
+    </li>
+  </ul>
+</nav>
+`;

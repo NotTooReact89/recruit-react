@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render credit card form component correctly 1`] = `
+<header
+  className="toolbar"
+>
+  <nav
+    className="toolbar__navigation"
+  >
+    <div
+      className="toolbar__toggle-button"
+    >
+      <button
+        className="toggle-button"
+        onClick={[MockFunction]}
+      >
+        <div
+          className="toggle-button__line"
+        />
+        <div
+          className="toggle-button__line"
+        />
+        <div
+          className="toggle-button__line"
+        />
+      </button>
+    </div>
+  </nav>
+</header>
+`;
