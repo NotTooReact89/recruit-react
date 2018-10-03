@@ -1,6 +1,6 @@
 import * as React from 'react';
+import * as renderer from 'react-test-renderer';
 import DrawerButton from './DrawerButton';
-const renderer = require('react-test-renderer');
 
 it('should render drawer button correctly', () => {
   const tree = renderer.create((

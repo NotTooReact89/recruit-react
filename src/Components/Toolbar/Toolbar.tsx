@@ -8,9 +8,9 @@ interface IToolbarProps {
 }
 
 const Toolbar = (props: IToolbarProps) => (
-  <header className="toolbar">
-    <nav className="toolbar__navigation">
-        <div className="toolbar__toggle-button">
+  <header className='toolbar'>
+    <nav className='toolbar__navigation'>
+        <div className='toolbar__toggle-button'>
             <DrawerToggleButton click={props.drawerClickHandler} />
         </div>
     </nav>

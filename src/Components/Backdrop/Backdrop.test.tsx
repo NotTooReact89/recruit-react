@@ -1,6 +1,6 @@
 import * as React from 'react';
+import * as renderer from 'react-test-renderer';
 import Backdrop from './Backdrop';
-const renderer = require('react-test-renderer');
 
 it('should render backdrop correctly', () => {
   const tree = renderer.create((

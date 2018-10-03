@@ -90,33 +90,33 @@ class CreditCardForm extends React.Component<any, IFormState> {
 
   public render () {
     return (
-      <form onSubmit={this.handleSubmit} className="ccForm">
+      <form onSubmit={this.handleSubmit} className='ccForm'>
         <h2>Enter your credit card details</h2>
-        <div className="panel panel-default">
+        <div className='panel panel-default'>
           <FormErrors formErrors={this.state.formErrors} />
         </div>
         <div className={`form-group ${this.errorClass(this.state.formErrors.ccNumber)}`}>
-          <label htmlFor="ccNumber">Credit card number</label>
-          <input type="text" required={true} className="form-control input-custom" name="ccNumber"
-            placeholder="Your 10 digit credit card number"
+          <label htmlFor='ccNumber'>Credit card number</label>
+          <input type='text' required={true} className='form-control input-custom' name='ccNumber'
+            placeholder='Your 10 digit credit card number'
             value={this.state.ccNumber}
             onChange={this.handleUserInput}  />
         </div>
         <div className={`form-group ${this.errorClass(this.state.formErrors.cvvNumber)}`}>
-          <label htmlFor="cvvNumber">CVV number</label>
-          <input type="password" required={true} className="form-control input-custom" name="cvvNumber"
-            placeholder="Three digit at the back of your card"
+          <label htmlFor='cvvNumber'>CVV number</label>
+          <input type='password' required={true} className='form-control input-custom' name='cvvNumber'
+            placeholder='Three digit at the back of your card'
             value={this.state.cvvNumber}
             onChange={this.handleUserInput}  />
         </div>
         <div className={`form-group ${this.errorClass(this.state.formErrors.expiryDate)}`}>
-          <label htmlFor="expiryDate">Expiry date</label>
-          <input type="date" required={true} className="form-control input-custom" name="expiryDate"
-            placeholder="Your credit card expiry date"
+          <label htmlFor='expiryDate'>Expiry date</label>
+          <input type='date' required={true} className='form-control input-custom' name='expiryDate'
+            placeholder='Your credit card expiry date'
             value={this.state.expiryDate}
             onChange={this.handleUserInput}  />
         </div>
-        <button type="submit" className="btn btn-custom">Submit</button>
+        <button type='submit' className='btn btn-custom'>Submit</button>
       </form>
     )
   }

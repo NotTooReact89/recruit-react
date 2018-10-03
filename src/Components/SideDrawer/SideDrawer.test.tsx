@@ -1,6 +1,6 @@
 import * as React from 'react';
+import * as renderer from 'react-test-renderer';
 import SideDrawer from './SideDrawer';
-const renderer = require('react-test-renderer');
 
 it('should show side drawer correctly', () => {
   const tree = renderer.create((

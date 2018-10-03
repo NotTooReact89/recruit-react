@@ -1,5 +1,5 @@
 import * as React from 'react';
-
+import './App.css'
 import { Backdrop, CreditCardForm, SideDrawer, Toolbar } from './Components';
 
 interface IState {
@@ -31,11 +31,11 @@ class App extends React.Component<any, IState> {
 
   public render() {
     return (
-      <div className='root'>
+      <div className='container-fluid'>
         <Toolbar drawerClickHandler={this.onDrawerClick} />
         <SideDrawer show={this.state.sideDrawerOpen} />
         {this.state.sideDrawerOpen ? <Backdrop click={this.onBackdropClick} /> : null}
-        <main className='container'>
+        <main className='formContainer'>
           <CreditCardForm />
         </main>
       </div>
